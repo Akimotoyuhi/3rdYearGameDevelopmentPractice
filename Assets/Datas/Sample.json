@@ -1,0 +1,9 @@
+{
+	"user_id":1,
+	"name":"Yuhi",
+	"is_login":true,
+	"hobby":[
+		"game",
+		"music"
+	]
+}
