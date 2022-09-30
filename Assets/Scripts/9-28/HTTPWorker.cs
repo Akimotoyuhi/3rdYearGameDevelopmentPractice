@@ -10,7 +10,7 @@ public class HTTPWorker : MonoBehaviour
 
     private void Start()
     {
-        NetworkManager.Instance.Request(
+        NetworkManager.Instance.Request<SampleModel>(
             m_url,
             model => OnCompleate(model)).Forget();
     }
@@ -19,11 +19,6 @@ public class HTTPWorker : MonoBehaviour
     {
         Debug.Log(model.name);
     }
-}
-
-public class NetworkRequestModel<T>
-{
-    public T[] Data;
 }
 
 [System.Serializable]

@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 
 public class Monster : MonoBehaviour
 {
-    MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=mypass;database=tekito");
+    MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=vantan");
 
     void Start()
     {

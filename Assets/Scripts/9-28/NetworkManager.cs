@@ -14,12 +14,12 @@ public class NetworkManager : MonoBehaviour
         Instance = this;
     }
 
-    public async UniTask Request(string url, System.Action<SampleModel> callBack)
+    public async UniTask Request<T>(string url, System.Action<T> callBack)
     {
         UnityWebRequest www = UnityWebRequest.Get(url);
         await www.SendWebRequest();
         Debug.Log(www.downloadHandler.text);
-        SampleModel model = JsonUtility.FromJson<SampleModel>(www.downloadHandler.text);
+        T model = JsonUtility.FromJson<T>(www.downloadHandler.text);
         callBack(model);
     }
 }
