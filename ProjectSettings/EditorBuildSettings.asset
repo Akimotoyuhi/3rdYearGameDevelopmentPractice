@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PhpDB.unity
+    guid: 13ab127afbd92e2479fe7402d8d30e83
+  - enabled: 1
+    path: Assets/Scenes/PhpDB_Result.unity
+    guid: b7afc8097cd69f246bb716cd28ff72b8
   m_configObjects: {}
